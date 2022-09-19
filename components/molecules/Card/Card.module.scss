@@ -1,0 +1,15 @@
+
+$text-color: #1F1F1F;
+.Card {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  
+
+  &_Text {
+    font-weight: 600;
+    color: $text-color;
+  }
+}

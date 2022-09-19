@@ -1,0 +1,12 @@
+
+$card-background: #FFF9F6;
+.CardWrapper {
+  background-color: $card-background;
+  border-radius: 24px;
+  padding: 15px;
+
+  // box-shadow: -3px 3px 6px rgba(231, 230, 255, 0.8);
+  &_Shadow {
+    box-shadow: -3px 3px 6px rgba(231, 230, 255, 0.8);
+  }
+}

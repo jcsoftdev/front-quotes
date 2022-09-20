@@ -5,6 +5,7 @@ import styles from '../styles/Home.module.scss'
 import CategoryList from '@/components/organisms/CategoryList'
 import Header from '@/components/organisms/Header'
 
+
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>

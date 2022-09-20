@@ -1,0 +1,24 @@
+$gradient: linear-gradient(147.21deg, #FFDC98 0.07%, rgba(255, 163, 212, .71) 111.68%);
+@import '../../../styles/variables.module.scss';
+
+.Boxes {
+  position: relative;
+  overflow: hidden;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem 1.5rem;
+  color: $dark-blue;
+  font-family: 'Cookie', cursive;
+
+  .Box {
+    z-index: 0;
+    background-image: $gradient;
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    top: 15%;
+    right: -150px;
+  }
+}

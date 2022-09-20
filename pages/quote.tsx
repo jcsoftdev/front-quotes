@@ -5,13 +5,22 @@ import Share from '@/components/atoms/Icon/Share/Share'
 import QuoteWrapper from '@/components/atoms/QuoteWrapper'
 import Wrapper from '@/components/atoms/Wrapper'
 import Image from 'next/image'
+import { useRouter } from 'next/router'
 import React from 'react'
 import styles from '../styles/pages/quote.module.scss'
 const Quote = () => {
+  const router = useRouter()
+
   return (
     <div className={styles.QuoteContainer}>
       <Wrapper className="Header">
-        <Button isIcon>
+        <Button
+          isIcon
+          onClick={() => {
+            const back = router.back()
+            console.log({ back })
+          }}
+        >
           <Back />
         </Button>
       </Wrapper>
@@ -33,7 +42,7 @@ const Quote = () => {
       </QuoteWrapper>
 
       <Wrapper className="">
-        <Button>Random</Button>
+        {/* <Button>Random</Button> */}
         <div className={styles.BottomSection}>
           <div className={styles.Reactions}>
             <Share />

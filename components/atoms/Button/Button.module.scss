@@ -6,6 +6,7 @@
   padding: .5rem 1rem;
   font-weight: 600;
   line-height: 22px;
+  color:$white;
   &_Purple {
     background-color: $purple;
   }
@@ -16,5 +17,24 @@
     padding: 1rem 2rem;
     font-weight: 700;
     font-size: 1.25rem;
+  }
+  &_Icon {
+    padding: 0;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: $purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg {
+      width: 20px;
+      height: 20px;
+      fill: #fff;
+    }
+    @media (prefers-color-scheme: dark) {
+      color: $purple;
+      background: $white;
+    }
   }
 }
